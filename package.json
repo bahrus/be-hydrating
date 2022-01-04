@@ -1,0 +1,19 @@
+{
+  "name": "be-hydrating",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahrus/be-hydrating.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bahrus/be-hydrating/issues"
+  },
+  "homepage": "https://github.com/bahrus/be-hydrating#readme"
+}
