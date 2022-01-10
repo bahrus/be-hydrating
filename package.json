@@ -1,17 +1,42 @@
 {
   "name": "be-hydrating",
   "version": "0.0.0",
+  "keywords": [
+    "web-components",
+    "web-component",
+    "custom-element",
+    "custom-elements",
+    "JSON",
+    "bind"
+  ],
   "description": "",
-  "main": "index.js",
+  "main": "be-hydrating.js",
+  "module": "be-hydrating.js",
+  "exports":{
+    ".": "./be-hydrating.js",
+    "./be-hydrating.js": "./be-hydrating.js"
+  },
+  "files":[
+    "*.*"
+  ],
+  "types": "types.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node node_modules/xtal-test/serve.js",
+    "package-check": "package-check",
+    "doc": "custom-elements-manifest analyze"
+  },
+  "dependencies": {
+    "be-decorated": "0.0.61",
+    "be-hive": "0.0.16",
+    "trans-render": "0.0.445"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bahrus/be-hydrating.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "anderson.bruce.b@gmail.com",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/bahrus/be-hydrating/issues"
   },
