@@ -17,6 +17,10 @@ export interface BeHydratingVirtualProps{
     /**
      * Non-JSON-serializable props
      */
+    scriptRefProps:any,
+    /**
+     * Non-JSON-serializable props
+     */
     complexProps:any,
     /**
      * Internal setting that tracks if all the merge can begin.
@@ -27,12 +31,16 @@ export interface BeHydratingVirtualProps{
      */
     scriptRefReady: boolean,
     script: HTMLScriptElement,
+    selector: string,
+
+    updateCount: number,
 }
 
-export interface ByHydratingProps extends BeHydratingVirtualProps{
-    proxy: Element & BeHydratingVirtualProps;
+export interface BeHydratingProps extends BeHydratingVirtualProps{
+    proxy: HTMLTemplateElement & BeHydratingVirtualProps;
 }
 
 export interface BeHydratingActions{
-    intro(proxy: Element & BeHydratingVirtualProps, target: Element, beDecorProps: BeDecoratedProps): void;
+    //intro(proxy: Element & BeHydratingVirtualProps, target: Element, beDecorProps: BeDecoratedProps): void;
+    onSelector(self: this): void;
 }
